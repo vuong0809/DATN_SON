@@ -1,0 +1,37 @@
+{
+  "name": "raspberr",
+  "version": "1.0.0",
+  "description": "A minimal Electron application",
+  "main": "main.js",
+  "build": {
+    "extraResources": [
+      "./build/**"
+    ]
+  },
+  "scripts": {
+    "pack": "electron-builder --dir",
+    "start": "electron .",
+    "build": "electron-packager ."
+  },
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^19.0.4",
+    "electron-builder": "^23.6.0",
+    "electron-installer-windows": "^3.0.0",
+    "electron-packager": "^16.0.0"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.1",
+    "socket.io-client": "^4.5.4"
+  }
+}
